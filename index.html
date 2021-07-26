@@ -4,19 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&amp;family=League+Script&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
     <title>Etch-a-Sketch</title>
 </head>
 <body>
-    <h1>Etch-a-Sketch</h1>
-    <button class="btn">Reset</button>
     <div class="container">
-        <div class="grid"></div>
-        <div class="knobs">
-            <div class="knob"></div>
-            <div class="knob"></div>
+    <div class="left">
+        <div class="pens">
+            <p>Select pen color:</p>
+            <div>
+                <input type = "radio" id ="blue" name= "color-option" value="blue" checked>
+                <label for="blue">Blue</label>
+            </div>
+            <div>
+                <input type = "radio" id ="random" name= "color-option" value="random">
+                <label for="random">Random</label>
+            </div>
+            <div>
+                <input type = "radio" id ="grey-scale" name= "color-option" value="grey-scale">
+                <label for="grey-scale">Grey-Scale</label>
+            </div> 
+        </div>
+
+    </div>
+
+    <div class="right">
+        <h1>Etch-a-Sketch</h1>
+        <button class="btn">Reset</button>
+        <div class="grid-container">
+            <div class="grid"></div>
+            <div class="knobs">
+                <div class="knob"></div>
+                <div class="knob"></div>
+            </div> 
         </div>
     </div>
+    </div>  
+    
     
     
     <script src = "source.js"></script>
